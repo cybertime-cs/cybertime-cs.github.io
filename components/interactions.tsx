@@ -53,7 +53,7 @@ export function Enhancements({ language }: { language: Language }) {
     };
     const move = (event: PointerEvent) => {
       if (!halo || reduced.matches || !finePointer.matches || event.pointerType !== 'mouse') return;
-      targetX = Math.min(event.clientX, window.innerWidth - 54); targetY = Math.min(event.clientY, window.innerHeight - 54);
+      targetX = Math.min(event.clientX, window.innerWidth - 66); targetY = Math.min(event.clientY, window.innerHeight - 66);
       if (!visible) { x = targetX; y = targetY; halo.style.opacity = '1'; visible = true; }
       halo.classList.toggle('over-link', !!(event.target as HTMLElement).closest('a,button,summary'));
       if (!frame) frame = requestAnimationFrame(animate);
@@ -72,5 +72,5 @@ export function Enhancements({ language }: { language: Language }) {
       cancelAnimationFrame(frame); cancelAnimationFrame(scrollFrame);
     };
   }, [language]);
-  return <div id="cursor-companion" aria-hidden="true"><Image unoptimized src={sitePath('baymax-cursor.png')} alt="" width={36} height={36} loading="eager" onError={(event) => { event.currentTarget.style.display = 'none'; }} /></div>;
+  return <div id="cursor-companion" aria-hidden="true"><Image unoptimized src={sitePath('baymax-full-body.png')} alt="" width={48} height={48} loading="eager" onError={(event) => { event.currentTarget.style.display = 'none'; }} /></div>;
 }
