@@ -91,7 +91,7 @@ News 使用固定高度滚动区域，支持鼠标滚轮、触摸和键盘。更
 - React + Vinext，使用项目自己的导出脚本按实际公开 URL 生成静态 HTML；无需运行后端服务器。
 - 语言切换使用普通链接并保留所在章节。禁用 JavaScript 仍能阅读页面、切换语言和下载 CV。
 - 使用系统字体，无外部字体服务、访问统计或第三方图片依赖。
-- 小机器人跟随效果保留原生指针，在触屏及“减少动画”设置下关闭。
+- 大白脸部图标跟随鼠标，保留原生指针，在触屏及“减少动画”设置下关闭。
 - 支持响应式布局、跳过导航、键盘焦点与打印；News 使用已安装的可访问性滚动组件。
 - 每种语言都有独立 URL、页面语言、canonical、hreflang 和 Person 结构化数据。
 - 页面结构参考 [Jon Barron](https://jonbarron.info/) 与 [Deepak Pathak](https://www.cs.cmu.edu/~dpathak/)，未复制他们的个人内容。
@@ -100,7 +100,7 @@ News 使用固定高度滚动区域，支持鼠标滚轮、触摸和键盘。更
 content/profile.ts           个人资料和网站地址
 lib/copy.ts                  中英文界面文案
 components/academic-page.tsx 页面栏目
-components/interactions.tsx  语言锚点、小机器人、引用复制
+components/interactions.tsx  语言锚点、大白鼠标挂件、引用复制
 app/globals.css              样式与响应式/打印适配
 public/files/                公开照片、简历和论文
 scripts/export-static.mjs    导出公开页面和资源

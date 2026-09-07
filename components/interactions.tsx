@@ -72,5 +72,5 @@ export function Enhancements({ language }: { language: Language }) {
       cancelAnimationFrame(frame); cancelAnimationFrame(scrollFrame);
     };
   }, [language]);
-  return <div id="cursor-companion" aria-hidden="true"><Image unoptimized src={sitePath('robot-cursor.png')} alt="" width={36} height={36} loading="eager" onError={(event) => { event.currentTarget.style.display = 'none'; }} /></div>;
+  return <div id="cursor-companion" aria-hidden="true"><Image unoptimized src={sitePath('baymax-cursor.png')} alt="" width={36} height={36} loading="eager" onError={(event) => { event.currentTarget.style.display = 'none'; }} /></div>;
 }
