@@ -27,7 +27,7 @@ export const profile: Profile = {
   affiliation: { zh: '西北工业大学', en: 'Northwestern Polytechnical University' },
   department: { zh: '计算机学院', en: 'School of Computer Science' },
   location: { zh: '中国 · 西安', en: 'Xi’an, China' },
-  photo: '', email: 'tcb@mail.nwpu.edu.cn', secondaryEmail: 't3482379751@gmail.com',
+  photo: 'files/photos/selfies.jpg', email: 'tcb@mail.nwpu.edu.cn', secondaryEmail: 't3482379751@gmail.com',
   cv: { zh: 'files/cv-zh.pdf', en: 'files/cv-en.pdf' },
   github: 'https://github.com/cybertime-cs', scholar: '', openreview: '', orcid: '',
   introduction: [

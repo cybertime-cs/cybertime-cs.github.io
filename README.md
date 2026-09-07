@@ -10,12 +10,19 @@
 
 需要 Node.js 24 和 npm。
 
+首次下载项目、缺少依赖，或需要按更新后的锁文件重新安装依赖时，先执行 `npm ci`。安装前请在本项目所有预览终端按 `Ctrl+C`，等程序退出，避免 Windows 下文件被占用。
+
 ```sh
 npm ci
+```
+
+日常更换照片、修改文字或栏目内容，不需要重新安装依赖。只需启动预览：
+
+```sh
 npm run dev
 ```
 
-打开 http://localhost:3000/ ，英文版为 http://localhost:3000/en/ 。
+打开 http://localhost:3000/ ，英文版为 http://localhost:3000/en/ 。预览已在运行时直接修改并保存文件即可；确认效果后，在预览终端按 `Ctrl+C` 停止，再执行发布前检查：
 
 ```sh
 npm run build
