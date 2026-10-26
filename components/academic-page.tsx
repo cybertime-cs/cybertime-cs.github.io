@@ -40,7 +40,7 @@ export function AcademicPage({ language }: { language: Language }) {
       </section>
       <Section id="education" title={t.education}>
         {profile.education.map((item, i) => <article key={i} className="education-entry"><div className="entry-heading"><h3>{item.school[language]}</h3><span className="date">{item.period[language]}</span></div><p>{item.degree[language]}</p>{item.detail[language] && <p>{item.detail[language]}</p>}</article>)}
-        <dl className="academic-record">{profile.metrics.map((metric, i) => <div key={i}><dt>{metric.label[language]}</dt><dd>{metric.value}</dd></div>)}</dl>
+        <dl className="academic-record">{profile.metrics.map((metric, i) => <div key={i}><dt>{metric.label[language]}</dt><dd>{metric.value}{metric.note[language] && <span className="metric-note">{zh ? '（' : '('}{metric.note[language]}{zh ? '）' : ')'}</span>}</dd></div>)}</dl>
         {profile.courses.length > 0 && <p className="coursework"><strong>{t.coursework}{zh ? '：' : ': '}</strong>{profile.courses.map(course => course.name[language]).join(zh ? '、' : ', ')}{zh ? '。' : '.'}</p>}
       </Section>
       <Section id="research" title={t.research}>

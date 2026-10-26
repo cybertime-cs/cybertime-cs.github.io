@@ -21,7 +21,7 @@ export type Profile = {
 // Public academic profile. Keep dates and achievements faithful to your records.
 // Images and CVs use paths relative to public/; an empty photo uses initials.
 export const profile: Profile = {
-  ready: true, updated: '2026-09-07',
+  ready: true, updated: '2026-10-26',
   name: { zh: '陶池邦', en: 'Chibang Tao' }, initials: 'CT',
   role: { zh: '计算机科学与技术专业本科生', en: 'Undergraduate in Computer Science' },
   affiliation: { zh: '西北工业大学', en: 'Northwestern Polytechnical University' },
@@ -43,7 +43,7 @@ export const profile: Profile = {
   }],
   metrics: [
     { label: { zh: 'GPA', en: 'GPA' }, value: '3.98 / 4.1', note: { zh: '', en: '' } },
-    { label: { zh: '专业排名', en: 'Rank' }, value: '3 / 173', note: { zh: '', en: '' } },
+    { label: { zh: '专业排名', en: 'Rank' }, value: '5 / 295', note: { zh: '前1.69%', en: 'Top 1.69%' } },
     { label: { zh: '英语六级', en: 'CET-6' }, value: '565', note: { zh: '', en: '' } },
   ],
   courses: [
@@ -54,7 +54,7 @@ export const profile: Profile = {
   ],
   experience: [
     { title: { zh: 'ASLP 语音实验室', en: 'ASLP Speech Laboratory' }, role: { zh: '科研实习', en: 'Research internship' }, detail: { zh: '参与语音数据测试链路构建和 SeedAudio 链路搭建，学习并实践深度学习与神经网络方法。', en: 'Contributed to speech-data testing pipelines and a SeedAudio pipeline, while studying and applying deep learning methods.' } },
-    { title: { zh: '舞蹈机器人基地', en: 'Dancing Robotics Group' }, role: { zh: '软件组成员', en: 'Software team member' }, detail: { zh: '参与机器人视觉、语音及韵律模块的部署与调试，使用 OpenCV、Vosk 和 Whisper 等工具。团队在 2026 年 RoboCup 中国专项赛获得国家一等奖（季军）。', en: 'Worked on deployment and debugging of vision, speech, and rhythm modules using tools including OpenCV, Vosk, and Whisper. The team received a national first prize (third place) at the 2026 RoboCup China Special Competition.' } },
+    { title: { zh: '舞蹈机器人基地', en: 'Dancing Robotics Group' }, role: { zh: '软件组成员', en: 'Software team member' }, detail: { zh: '参与机器人视觉、语音及韵律模块的部署与调试，使用 OpenCV、Vosk 和 Whisper 等工具。团队在 2026 年 RoboCup 中国专项赛获得国家特等奖（季军）。', en: 'Worked on deployment and debugging of vision, speech, and rhythm modules using tools including OpenCV, Vosk, and Whisper. The team received a national grand prize (third place) in the Dancing Robot Performance Competition at the 2026 RoboCup China Special Competition.' } },
   ],
   projects: [
     { title: { zh: 'Qwen3.5 轻量化模型的 LoRA 微调', en: 'LoRA Fine-tuning of Qwen3.5' }, period: '', role: { zh: '参数高效微调实验', en: 'Parameter-efficient fine-tuning' }, description: { zh: '基于 Qwen3.5-0.8B 开展有限算力下的指令微调实验，完成环境配置、数据加载与训练脚本编写，并跟踪分析训练损失和准确率。', en: 'Conducted instruction fine-tuning experiments with Qwen3.5-0.8B under limited compute. Set up the environment, data loading, and LoRA training scripts, and tracked training loss and accuracy.' }, tags: ['LLM', 'LoRA', 'PEFT'] },
@@ -63,15 +63,18 @@ export const profile: Profile = {
   ],
   publications: [],
   competitions: [
-    { year: '2026', title: { zh: 'RoboCup 机器人大赛中国专项赛', en: 'RoboCup China Special Competition' }, distinction: { zh: '国家一等奖 · 季军', en: 'National First Prize · Third Place' }, organization: { zh: '', en: '' } },
-    { year: '2025', title: { zh: 'RoboCup 机器人大赛中国专项赛', en: 'RoboCup China Special Competition' }, distinction: { zh: '国家三等奖', en: 'National Third Prize' }, organization: { zh: '', en: '' } },
-    { year: '', title: { zh: '睿抗机器人设计大赛', en: 'RAICOM Robotics Design Competition' }, distinction: { zh: '省级一等奖', en: 'Provincial First Prize' }, organization: { zh: '', en: '' } },
-    { year: '', title: { zh: '三维数字化建模大赛', en: '3D Digital Modeling Competition' }, distinction: { zh: '省级特等奖', en: 'Provincial Special Prize' }, organization: { zh: '', en: '' } },
-    { year: '', title: { zh: '国际数学建模竞赛（美赛）', en: 'Mathematical Contest in Modeling' }, distinction: { zh: 'Honorable Mention', en: 'Honorable Mention' }, organization: { zh: '', en: '' } },
-    { year: '', title: { zh: '西北工业大学大学生数学竞赛', en: 'Northwestern Polytechnical University Mathematics Competition' }, distinction: { zh: '校一等奖', en: 'University First Prize' }, organization: { zh: '', en: '' } },
+    { year: '2026', title: { zh: 'RoboCup 机器人大赛中国赛总决赛舞蹈机器人表演赛', en: 'RoboCup China Finals — Dancing Robot Performance Competition' }, distinction: { zh: '国家特等奖 · 冠军', en: 'National Grand Prize · Champion' }, organization: { zh: '', en: '' } },
+    { year: '2026', title: { zh: 'RoboCup 机器人大赛中国赛总决赛舞蹈机器人创意赛', en: 'RoboCup China Finals — Dancing Robot Creativity Competition' }, distinction: { zh: '国家特等奖 · 亚军', en: 'National Grand Prize · Runner-up' }, organization: { zh: '', en: '' } },
+    { year: '2026', title: { zh: 'RoboCup 机器人大赛中国赛专项赛舞蹈机器人表演赛', en: 'RoboCup China Special Competition — Dancing Robot Performance Competition' }, distinction: { zh: '国家特等奖 · 季军', en: 'National Grand Prize · Third Place' }, organization: { zh: '', en: '' } },
+    { year: '2025', title: { zh: 'RoboCup 机器人大赛中国赛专项赛舞蹈机器人表演赛', en: 'RoboCup China Special Competition — Dancing Robot Performance Competition' }, distinction: { zh: '国家三等奖', en: 'National Third Prize' }, organization: { zh: '', en: '' } },
+    { year: '2026', title: { zh: '睿抗机器人设计大赛', en: 'RAICOM Robotics Design Competition' }, distinction: { zh: '省级一等奖', en: 'Provincial First Prize' }, organization: { zh: '', en: '' } },
+    { year: '2026', title: { zh: '三维数字化建模大赛', en: '3D Digital Modeling Competition' }, distinction: { zh: '省级特等奖', en: 'Provincial Special Prize' }, organization: { zh: '', en: '' } },
+    { year: '2026', title: { zh: '国际数学建模竞赛（美赛）', en: 'Mathematical Contest in Modeling' }, distinction: { zh: 'Honorable Mention', en: 'Honorable Mention' }, organization: { zh: '', en: '' } },
+    { year: '2026', title: { zh: '西北工业大学大学生数学竞赛', en: 'Northwestern Polytechnical University Mathematics Competition' }, distinction: { zh: '校一等奖', en: 'University First Prize' }, organization: { zh: '', en: '' } },
   ],
   honors: [
-    { year: '2025', title: { zh: '国家奖学金', en: 'National Scholarship' }, organization: { zh: '', en: '' } },
+    { year: '2026', title: { zh: '国家奖学金', en: 'National Scholarship' }, detail: { zh: '2025-2026 学年度', en: '2025-2026 academic year' }, organization: { zh: '中华人民共和国教育部', en: 'Ministry of Education of the People\'s Republic of China' } },
+    { year: '2025', title: { zh: '国家奖学金', en: 'National Scholarship' }, detail: { zh: '2024-2025 学年度', en: '2024-2025 academic year' }, organization: { zh: '中华人民共和国教育部', en: 'Ministry of Education of the People\'s Republic of China' } },
     { year: '2025', title: { zh: '校一等奖学金', en: 'University First-class Scholarship' }, organization: { zh: '西北工业大学', en: 'Northwestern Polytechnical University' } },
   ],
   skills: [
@@ -80,10 +83,13 @@ export const profile: Profile = {
   ],
   // Add one dated sentence here for each update. Most recent entries go first.
   news: [
-    { date: '2026', text: { zh: '与机器人团队在 RoboCup 中国专项赛获得国家一等奖（季军）。', en: 'Our robotics team received a national first prize (third place) at the RoboCup China Special Competition.' } },
-    { date: '2025', text: { zh: '获得国家奖学金。', en: 'Received the National Scholarship.' } },
-    { date: '2025', text: { zh: '获得西北工业大学校一等奖学金。', en: 'Received the University First-class Scholarship at Northwestern Polytechnical University.' } },
-    { date: '2025', text: { zh: '与机器人团队在 RoboCup 中国专项赛获得国家三等奖。', en: 'Our robotics team received a national third prize at the RoboCup China Special Competition.' } },
+    { date: '2026-10', text: { zh: '我们团队的机器人祝融获得了2026RoboCup机器人大赛中国总决赛舞蹈机器人表演赛的冠军', en: 'Our team’s robot Zhurong won the Dancing Robot Performance Competition at the 2026 RoboCup China Finals.' } },
+    { date: '2026-10', text: { zh: '我们团队的机器人银河获得了2026RoboCup机器人大赛中国总决赛舞蹈机器人创意赛的亚军', en: 'Our team’s robot Yinhe was the runner-up in the Dancing Robot Creativity Competition at the 2026 RoboCup China Finals.' } },
+    { date: '2026-10', text: { zh: '获得2025-2026学年度国家奖学金', en: 'Received the National Scholarship for the 2025-2026 academic year.' } },
+    { date: '2026-08', text: { zh: '与机器人团队在 RoboCup 中国专项赛获得国家特等奖（季军）。', en: 'Our robotics team received a national grand prize (third place) at the RoboCup China Special Competition.' } },
+    { date: '2025-10', text: { zh: '获得2024-2025学年度国家奖学金。', en: 'Received the National Scholarship for the 2024-2025 academic year.' } },
+    { date: '2025-11', text: { zh: '获得西北工业大学校一等奖学金。', en: 'Received the University First-class Scholarship at Northwestern Polytechnical University.' } },
+    { date: '2025-08', text: { zh: '与机器人团队在 RoboCup 中国专项赛获得国家三等奖。', en: 'Our robotics team received a national third prize at the RoboCup China Special Competition.' } },
   ],
   personalNote: { zh: '', en: '' },
 };

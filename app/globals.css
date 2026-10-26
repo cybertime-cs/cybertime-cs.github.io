@@ -52,6 +52,7 @@ h3,h4 { font-size: 16px; line-height: 1.7; font-weight: 600; }
 .academic-record { display: flex; flex-wrap: wrap; gap: 7px 28px; margin-top: 10px; font-size: 15px; }
 .academic-record > div { display: flex; gap: 8px; }
 .academic-record dt { font-weight: 600; }
+.metric-note { margin-inline-start: .35em; color: #b91c1c; }
 .coursework { margin-top: 9px; font-size: 14px; color: #555; }
 .coursework strong { font-weight: 500; color: #333; }
 .subheading { font-size: 16px; font-weight: 600; margin: 2px 0 9px; color: #555; }
