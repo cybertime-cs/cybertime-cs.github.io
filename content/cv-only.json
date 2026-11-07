@@ -1,0 +1,11 @@
+{
+  "papers": [
+    {
+      "title": "DyQ-VLA: Temporal-Dynamic-Aware Quantization for Embodied Vision-Language-Action Models",
+      "authors": ["Zihao Zheng", "Hangyu Cao", "Chibang Tao", "Zhihao Mao", "Lingyue Zhang", "Maoliang Li", "Jiayu Chen", "Hailong Zou", "Xuanzhe Liu", "Donggang Cao", "Hong Mei", "Xiang Chen"],
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2603.07904",
+      "status": { "zh": "ICLR 2027 在投", "en": "Under review at ICLR 2027" }
+    }
+  ]
+}

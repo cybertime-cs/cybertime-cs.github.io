@@ -12,7 +12,7 @@ function Section({ id, title, children }: { id: string; title: string; children:
   return <section id={id} className="content-section" aria-labelledby={`${id}-title`}><h2 id={`${id}-title`}>{title}</h2>{children}</section>;
 }
 function Achievements({ items, language }: { items: Achievement[]; language: Language }) {
-  return <ul className="achievement-list">{items.map((item, i) => <li key={i}><div><span className="achievement-name">{item.url ? <External href={item.url}>{item.title[language]}</External> : item.title[language]}</span>{item.distinction && <span> — {item.distinction[language]}</span>}{item.detail && <p className="detail">{item.detail[language]}</p>}</div>{item.year && <time>{item.year}</time>}</li>)}</ul>;
+  return <ul className="achievement-list">{items.map((item, i) => <li key={i} className={item.highlight ? 'achievement-highlight' : undefined}><div><span className="achievement-name">{item.url ? <External href={item.url}>{item.title[language]}</External> : item.title[language]}</span>{item.distinction && <span className="achievement-distinction"> — {item.distinction[language]}</span>}{item.detail && <p className="detail">{item.detail[language]}</p>}</div>{item.year && <time>{item.year}</time>}</li>)}</ul>;
 }
 export function AcademicPage({ language }: { language: Language }) {
   const t = copy[language];
