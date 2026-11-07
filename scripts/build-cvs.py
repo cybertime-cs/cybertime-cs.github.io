@@ -165,10 +165,12 @@ def build(lang):
     cv.p((f'<b><font color="{RED}">获奖比例 0.3%</font>；本年级唯一获奖者。</b>' if zh else
           f'<b><font color="{RED}">0.3% recipient rate</font>; sole recipient in my cohort.</b>'),
          x=LEFT + 10, width=WIDTH - 10, after=2)
-    cv.row('<b>国家奖学金</b>（2024-2025、2025-2026 学年度）' if zh else
-           '<b>National Scholarship</b> (2024-2025 and 2025-2026 academic years)', '2025, 2026')
-    cv.row('校一等奖学金（2024-2025、2025-2026 学年度）' if zh else
-           'University First-class Scholarship (2024-2025 and 2025-2026)', '2025, 2026')
+    for year, academic_year in [('2026', '2025-2026'), ('2025', '2024-2025')]:
+        cv.row(f'<b>国家奖学金</b>（{academic_year} 学年度）' if zh else
+               f'<b>National Scholarship</b> ({academic_year} academic year)', year)
+    for year, academic_year in [('2026', '2025-2026'), ('2025', '2024-2025')]:
+        cv.row(f'校一等奖学金（{academic_year} 学年度）' if zh else
+               f'University First-class Scholarship ({academic_year} academic year)', year)
 
     cv.section('研究论文', 'Research Paper')
     for paper in cv_only['papers']:

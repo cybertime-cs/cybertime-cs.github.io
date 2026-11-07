@@ -28,7 +28,7 @@ export const profile: Profile = {
   department: { zh: '计算机学院', en: 'School of Computer Science' },
   location: { zh: '中国 · 西安', en: 'Xi’an, China' },
   photo: 'files/photos/selfies.jpg', email: 'tcb@mail.nwpu.edu.cn', secondaryEmail: 't3482379751@gmail.com',
-  cv: { zh: 'files/cv-zh-2026-11-08.pdf', en: 'files/cv-en-2026-11-08.pdf' },
+  cv: { zh: 'files/cv-zh-2026-11-08-v2.pdf', en: 'files/cv-en-2026-11-08-v2.pdf' },
   github: 'https://github.com/cybertime-cs', scholar: '', openreview: '', orcid: '',
   introduction: [
     { zh: '我是西北工业大学计算机学院计算机科学与技术专业的本科生，预计于 2028 年 7 月毕业。我的研究兴趣包括视觉–语言–动作模型（VLA）、WAM、多模态感知与大语言模型。', en: 'I am an undergraduate in Computer Science at Northwestern Polytechnical University, expecting to graduate in July 2028. My research interests include vision-language-action (VLA) models, WAM, multimodal perception, and large language models.' },
