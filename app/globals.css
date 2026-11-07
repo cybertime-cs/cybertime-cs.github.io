@@ -78,7 +78,8 @@ summary { cursor: pointer; color: #2265a0; width: fit-content; }
 .achievement-list li { position: relative; display: list-item; padding: 0 60px 0 0; margin: 8px 0; font-size: 15px; }
 .achievement-list time { position: absolute; top: 0; right: 0; color: #6a6a6a; font-size: 14px; }
 .achievement-highlight .achievement-name { font-weight: 700; }
-.achievement-highlight .achievement-distinction,.achievement-highlight .detail { color: #b91c1c; font-weight: 600; }
+.achievement-highlight .achievement-distinction { color: #b91c1c; font-weight: 600; }
+.achievement-highlight .detail { color: #2c2c2c; font-weight: 600; }
 .detail { color: #626262; font-size: 14px; }
 .news-scroll { height: 156px; width: 100%; }
 .news-scroll [data-slot='scroll-area-viewport'] { overscroll-behavior: contain; }
