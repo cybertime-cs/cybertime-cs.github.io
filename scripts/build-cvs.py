@@ -162,8 +162,8 @@ def build(lang):
     yanbao = profile['honors'][0]
     cv.row('<b>' + safe(yanbao['title'][lang]) + '</b>' +
            ('（2025-2026 学年度）' if zh else ' (2025-2026 academic year)'), '2026')
-    cv.p((f'<b><font color="{RED}">获奖比例 0.3%</font>；本学院本学年度唯一获奖者。</b>' if zh else
-          f'<b><font color="{RED}">0.3% recipient rate</font>; sole recipient in the School of Computer Science that year.</b>'),
+    cv.p((f'<b><font color="{RED}">获奖比例 0.3%</font>；本年级唯一获奖者。</b>' if zh else
+          f'<b><font color="{RED}">0.3% recipient rate</font>; sole recipient in my cohort.</b>'),
          x=LEFT + 10, width=WIDTH - 10, after=2)
     cv.row('<b>国家奖学金</b>（2024-2025、2025-2026 学年度）' if zh else
            '<b>National Scholarship</b> (2024-2025 and 2025-2026 academic years)', '2025, 2026')

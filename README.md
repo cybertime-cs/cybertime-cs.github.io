@@ -43,7 +43,7 @@ npm run lint
 | `name`, `role`, `affiliation`, `department` | 姓名、身份、学校和学院 |
 | `email`, `secondaryEmail`, `github` | 首屏联系方式与 GitHub 链接 |
 | `photo` | 新照片路径，例如 `files/portrait.jpg`；空值时显示姓名缩写 |
-| `cv` | 中英文 PDF 路径，当前为 `files/cv-zh-2026-11-07.pdf` 和 `files/cv-en-2026-11-07.pdf` |
+| `cv` | 中英文 PDF 路径，当前为 `files/cv-zh-2026-11-08.pdf` 和 `files/cv-en-2026-11-08.pdf` |
 | `introduction` | 精简个人简介 |
 | `education`, `metrics`, `courses` | 教育、GPA、排名、课程信息 |
 | `experience`, `projects`, `skills` | 研究经历、项目贡献、技术能力 |
@@ -83,7 +83,7 @@ News 使用固定高度滚动区域，支持鼠标滚轮、触摸和键盘。更
 
 新照片放进 `public/files/`，然后修改 `photo`。当前没有使用原始简历照片。
 
-中英文公开 CV 已放在 `public/files/cv-zh-2026-11-07.pdf` 和 `public/files/cv-en-2026-11-07.pdf`。日后更新个人经历时，也同步更新两种语言的 PDF。网页上的下载链接会根据页面语言选择对应文件。原始 Word 简历不在公开仓库中。
+中英文公开 CV 已放在 `public/files/cv-zh-2026-11-08.pdf` 和 `public/files/cv-en-2026-11-08.pdf`。日后更新个人经历时，也同步更新两种语言的 PDF。网页上的下载链接会根据页面语言选择对应文件。原始 Word 简历不在公开仓库中。
 
 简历生成脚本为 `scripts/build-cvs.py`。只在 PDF 中展示的论文维护在 `content/cv-only.json`，不会显示到主页的 Publications 栏目。更新方式见维护指南。
 

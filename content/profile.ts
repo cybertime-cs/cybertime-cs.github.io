@@ -21,14 +21,14 @@ export type Profile = {
 // Public academic profile. Keep dates and achievements faithful to your records.
 // Images and CVs use paths relative to public/; an empty photo uses initials.
 export const profile: Profile = {
-  ready: true, updated: '2026-11-07',
+  ready: true, updated: '2026-11-08',
   name: { zh: '陶池邦', en: 'Chibang Tao' }, initials: 'CT',
   role: { zh: '计算机科学与技术专业本科生', en: 'Undergraduate in Computer Science' },
   affiliation: { zh: '西北工业大学', en: 'Northwestern Polytechnical University' },
   department: { zh: '计算机学院', en: 'School of Computer Science' },
   location: { zh: '中国 · 西安', en: 'Xi’an, China' },
   photo: 'files/photos/selfies.jpg', email: 'tcb@mail.nwpu.edu.cn', secondaryEmail: 't3482379751@gmail.com',
-  cv: { zh: 'files/cv-zh-2026-11-07.pdf', en: 'files/cv-en-2026-11-07.pdf' },
+  cv: { zh: 'files/cv-zh-2026-11-08.pdf', en: 'files/cv-en-2026-11-08.pdf' },
   github: 'https://github.com/cybertime-cs', scholar: '', openreview: '', orcid: '',
   introduction: [
     { zh: '我是西北工业大学计算机学院计算机科学与技术专业的本科生，预计于 2028 年 7 月毕业。我的研究兴趣包括视觉–语言–动作模型（VLA）、WAM、多模态感知与大语言模型。', en: 'I am an undergraduate in Computer Science at Northwestern Polytechnical University, expecting to graduate in July 2028. My research interests include vision-language-action (VLA) models, WAM, multimodal perception, and large language models.' },
@@ -73,7 +73,7 @@ export const profile: Profile = {
     { year: '2026', title: { zh: '西北工业大学大学生数学竞赛', en: 'Northwestern Polytechnical University Mathematics Competition' }, distinction: { zh: '校一等奖', en: 'University First Prize' }, organization: { zh: '', en: '' } },
   ],
   honors: [
-    { year: '2026', title: { zh: '燕宝奖学金', en: 'Yanbao Scholarship' }, distinction: { zh: '获奖比例 0.3%', en: '0.3% recipient rate' }, detail: { zh: '2025-2026 学年度；本学院本学年度唯一获奖者。', en: 'The sole recipient in the School of Computer Science for the 2025-2026 academic year.' }, highlight: true, organization: { zh: '', en: '' } },
+    { year: '2026', title: { zh: '燕宝奖学金', en: 'Yanbao Scholarship' }, distinction: { zh: '获奖比例 0.3%', en: '0.3% recipient rate' }, detail: { zh: '2025-2026 学年度；本年级唯一获奖者。', en: 'The sole recipient in my cohort for the 2025-2026 academic year.' }, highlight: true, organization: { zh: '', en: '' } },
     { year: '2026', title: { zh: '校一等奖学金', en: 'University First-class Scholarship' }, detail: { zh: '2025-2026 学年度', en: '2025-2026 academic year' }, organization: { zh: '西北工业大学', en: 'Northwestern Polytechnical University' } },
     { year: '2026', title: { zh: '国家奖学金', en: 'National Scholarship' }, detail: { zh: '2025-2026 学年度', en: '2025-2026 academic year' }, organization: { zh: '中华人民共和国教育部', en: 'Ministry of Education of the People\'s Republic of China' } },
     { year: '2025', title: { zh: '国家奖学金', en: 'National Scholarship' }, detail: { zh: '2024-2025 学年度', en: '2024-2025 academic year' }, organization: { zh: '中华人民共和国教育部', en: 'Ministry of Education of the People\'s Republic of China' } },
@@ -85,7 +85,7 @@ export const profile: Profile = {
   ],
   // Add one dated sentence here for each update. Most recent entries go first.
   news: [
-    { date: '2026-10', text: { zh: '获得 2025-2026 学年度燕宝奖学金，获奖比例 0.3%，为本学院本学年度唯一获奖者。', en: 'Received the Yanbao Scholarship for the 2025-2026 academic year (0.3% recipient rate), as the sole recipient in the School of Computer Science that year.' } },
+    { date: '2026-10', text: { zh: '获得 2025-2026 学年度燕宝奖学金，获奖比例 0.3%，为本年级唯一获奖者。', en: 'Received the Yanbao Scholarship for the 2025-2026 academic year (0.3% recipient rate), as the sole recipient in my cohort.' } },
     { date: '2026-10', text: { zh: '获得2025-2026学年度校一等奖学金', en: 'Received the University First-class Scholarship for the 2025-2026 academic year.' } },
     { date: '2026-10', text: { zh: '我们团队的机器人祝融获得了2026RoboCup机器人大赛中国总决赛舞蹈机器人表演赛的冠军', en: 'Our team’s robot Zhurong won the Dancing Robot Performance Competition at the 2026 RoboCup China Finals.' } },
     { date: '2026-10', text: { zh: '我们团队的机器人银河获得了2026RoboCup机器人大赛中国总决赛舞蹈机器人创意赛的亚军', en: 'Our team’s robot Yinhe was the runner-up in the Dancing Robot Creativity Competition at the 2026 RoboCup China Finals.' } },
