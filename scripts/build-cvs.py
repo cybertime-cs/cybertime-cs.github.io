@@ -132,13 +132,10 @@ class CV:
         reader = PdfReader(self.path)
         assert len(reader.pages) == 1
         text = reader.pages[0].extract_text()
-        required = ['0.3%', profile['metrics'][1]['value'].replace(' ', ''),
-                    profile['metrics'][1]['note'][self.lang], 'ICLR 2027', 'DyQ-VLA',
-                    'Chibang Tao', profile['updated']]
+        required = ['0.3%', 'ICLR 2027', 'DyQ-VLA', 'Chibang Tao', profile['updated']]
         for token in required:
             assert token in text, (self.lang, token)
         assert ('在投' if self.lang == 'zh' else 'Under review') in text
-        assert '5/295' not in text and '1.69%' not in text
         (OUT / f'cv-{self.lang}-text.txt').write_text(text, encoding='utf-8')
         print(f'{self.path}: 1 page; content bottom {self.y:.1f} pt')
 
@@ -151,10 +148,8 @@ def build(lang):
     cv.row('<b>西北工业大学</b> · 计算机学院 · 计算机科学与技术' if zh else
            '<b>Northwestern Polytechnical University</b> - Computer Science and Technology',
            profile['education'][0]['period'][lang].replace(' ', '') if zh else profile['education'][0]['period'][lang])
-    rank = profile['metrics'][1]
-    cv.p(('GPA：' if zh else 'GPA: ') + f'<b>{safe(profile["metrics"][0]["value"].replace(" ", ""))}</b> &nbsp; | &nbsp; ' +
-         ('专业排名：' if zh else 'Rank: ') + f'<b>{safe(rank["value"].replace(" ", ""))}</b> '
-         f'(<font color="{RED}">{safe(rank["note"][lang])}</font>) &nbsp; | &nbsp; CET-6: 565')
+    cet6 = next(metric for metric in profile['metrics'] if metric['label']['en'] == 'CET-6')
+    cv.p(f'CET-6: {safe(cet6["value"])}')
     cv.p('研究兴趣：VLA、WAM、多模态感知、大语言模型。' if zh else
          'Research interests: VLA, WAM, multimodal perception, and large language models.')
 

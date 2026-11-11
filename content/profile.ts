@@ -21,14 +21,14 @@ export type Profile = {
 // Public academic profile. Keep dates and achievements faithful to your records.
 // Images and CVs use paths relative to public/; an empty photo uses initials.
 export const profile: Profile = {
-  ready: true, updated: '2026-11-08',
+  ready: true, updated: '2026-11-11',
   name: { zh: '陶池邦', en: 'Chibang Tao' }, initials: 'CT',
   role: { zh: '计算机科学与技术专业本科生', en: 'Undergraduate in Computer Science' },
   affiliation: { zh: '西北工业大学', en: 'Northwestern Polytechnical University' },
   department: { zh: '计算机学院', en: 'School of Computer Science' },
   location: { zh: '中国 · 西安', en: 'Xi’an, China' },
   photo: 'files/photos/selfies.jpg', email: 'tcb@mail.nwpu.edu.cn', secondaryEmail: 't3482379751@gmail.com',
-  cv: { zh: 'files/cv-zh-2026-11-08-v2.pdf', en: 'files/cv-en-2026-11-08-v2.pdf' },
+  cv: { zh: 'files/cv-zh-2026-11-11.pdf', en: 'files/cv-en-2026-11-11.pdf' },
   github: 'https://github.com/cybertime-cs', scholar: '', openreview: '', orcid: '',
   introduction: [
     { zh: '我是西北工业大学计算机学院计算机科学与技术专业的本科生，预计于 2028 年 7 月毕业。我的研究兴趣包括视觉–语言–动作模型（VLA）、WAM、多模态感知与大语言模型。', en: 'I am an undergraduate in Computer Science at Northwestern Polytechnical University, expecting to graduate in July 2028. My research interests include vision-language-action (VLA) models, WAM, multimodal perception, and large language models.' },
@@ -42,8 +42,6 @@ export const profile: Profile = {
     detail: { zh: '', en: '' },
   }],
   metrics: [
-    { label: { zh: 'GPA', en: 'GPA' }, value: '3.98 / 4.1', note: { zh: '', en: '' } },
-    { label: { zh: '专业排名', en: 'Rank' }, value: '3 / 175', note: { zh: '前1.71%', en: 'Top 1.71%' } },
     { label: { zh: '英语六级', en: 'CET-6' }, value: '565', note: { zh: '', en: '' } },
   ],
   courses: [
